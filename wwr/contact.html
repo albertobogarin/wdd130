@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact Whitewater Rafting for questions about tours, reservations, and services." />
+    <title>Contact Us - Whitewater Rafting</title>
+    <link rel="stylesheet" href="rafting.css" />
+</head>
+<body>
+    <header>
+        <h1>Whitewater Rafting</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="tours.html">Tours</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="company-info">
+            <h2>Contact Information</h2>
+            <address>
+                123 Rapids Road<br />
+                Adventure City, AC 54321<br />
+                Phone: <a href="tel:+1234567890">(123) 456-7890</a><br />
+                Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a>
+            </address>
+
+            <h3>Our Location</h3>
+            <div class="map-container">
+                <!-- Google Map iframe without inline border style -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0193350432574!2d-122.41941518468156!3d37.77492927975911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c1a04f913%3A0x4d8a9f54d1775e49!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1598748542682!5m2!1sen!2sus" 
+                    width="600" height="450" style="border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Whitewater Rafting Location">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Jane Doe - Tour Guide" />
+                    <figcaption>Jane Doe - Lead Tour Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="John Smith - Safety Officer" />
+                    <figcaption>John Smith - Safety Officer</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Emily Davis - Customer Relations" />
+                    <figcaption>Emily Davis - Customer Relations</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" novalidate>
+                <!-- Name -->
+                <div class="form-item">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <!-- Email -->
+                <div class="form-item">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <!-- Purpose (Radio Buttons) -->
+                <fieldset>
+                    <legend>Purpose of your message:</legend>
+                    <div class="form-item">
+                        <input type="radio" id="general" name="purpose" value="General Inquiry" required />
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question" />
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="radio" id="website" name="purpose" value="Website Suggestion" />
+                        <label for="website">Website Suggestion</label>
+                    </div>
+                </fieldset>
+
+                <!-- Message -->
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <!-- Newsletter subscription -->
+                <div class="form-item">
+                    <input type="checkbox" id="newsletter" name="newsletter" />
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-item">
+                    <button type="submit" aria-label="Send Message to Whitewater Rafting">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Whitewater Rafting</p>
+        <p>
+            <a href="https://moqups.com/share/your-wireframe-link" target="_blank" rel="noopener noreferrer">
+                View Contact Us Page Wireframe
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
+
