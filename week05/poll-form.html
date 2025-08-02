@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WDD 130 | HTML Form – User Poll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 <body>
   <header>
@@ -19,9 +23,38 @@
 
         <label for="useremail">Email:</label>
         <input type="email" id="useremail" name="useremail">
-      </fieldset>
-
       <fieldset>
+  <legend>Información de contacto</legend>
+
+  <div class="form-item column2">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname">
+  </div>
+
+  <div class="form-item column2">
+    <label for="useremail">Email:</label>
+    <input type="email" id="useremail" name="useremail">
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Preguntas</legend>
+
+  <div class="form-item column1">
+    <label for="browser">¿Cuál es tu navegador favorito?</label>
+    <select id="browser" name="browser">
+      <option value="chrome">Chrome</option>
+      <option value="firefox">Firefox</option>
+      <option value="safari">Safari</option>
+      <option value="edge">Edge</option>
+    </select>
+  </div>
+
+  <div class="form-item column1">
+    <label for="pet">¿Tienes una mascota?</label>
+    <input type="checkbox" id="pet" name="pet">
+  </div>
+</fieldset>
         <legend>Questions</legend>
         <label for="browser">What is your favorite internet browser?</label>
         <select id="browser" name="browser">
